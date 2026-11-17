@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-weaviate
-  version: "0.63.0"
+  version: "0.63.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_weaviate-${{ version }}.tar.gz
-  sha256: e10d3da41ed4541a89d6ca6109680aa2314ff11a8d14694aa5b87e1a63e3fb48
+  sha256: 6030b4b4168b607d42a81154e87c4ef839728aa469550fe009907564e836b6ce
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
